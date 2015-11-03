@@ -126,7 +126,7 @@
         </div>
         <div class="eight wide column">
           <h4 class="ui inverted header">Why the Zero System project?</h4>
-          <p class="justify text">I <a href="http://christophdorn.com">Christoph Dorn</a> have been continuously searching for the ultimate development environment and system. <b>Zero System</b> is my attempt to bring <i>declarative based system composition</i> to </i>NodeJS and JavaScript</i> application development. I believe we must start <i>declaring</i> how we wish to compose our applications (which are really systems) rather than <i>program</i> them. Declarative composition seems to be an underpinning of component-based development and demands more attention.</p>
+          <p class="justify text">I <a href="http://christophdorn.com">Christoph Dorn</a> have been continuously searching for the ultimate development environment and system. <b>Zero System</b> is my attempt to bring <i>declarative based system composition</i> to </i>NodeJS and JavaScript</i> application development. I believe we must start <i>declaring</i> how we wish to compose our applications (which are really wholistic systems) rather than <i>instruct</i> them. Declarative composition seems to be an underpinning of component-based development and demands more attention.</p>
         </div>
       </div>
       <div class="ui inverted section divider"></div>
@@ -169,37 +169,11 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
 
   <script src="/cores/export/for/browserify/polyfills.dist.js"></script>
   <script src="/cores/export/for/browserify/lib.dist.js"></script>
+  <script src="/cores/export/for/webpack.skin/skin.js" async></script>
   <script src="/cores/export/for/browserify/cores.js" async></script>
   <script src="/cores/export/for/browserify/page.js" async></script>
   <script src="/cores/data/for/record.collections/api.js" async></script>
   <script src="/cores/export/for/webpack.skin/components.js" async></script>
 
-  <script>
-	// TODO: This must be callable multiple times!
-  window.animateSkin = function () {
-    // fix main menu to page on passing
-    $('.main.menu').visibility({
-      type: 'fixed',
-      offset : 48
-    });
-    $('.overlay').visibility({
-      type: 'fixed',
-      offset: 80
-    });
-  
-    // lazy load images
-    $('.image').visibility({
-      type: 'image',
-      transition: 'vertical flip in',
-      duration: 500
-    });
-  
-    $('.menu .item').tab();
-  
-    $('.definition.popup').popup({
-      inline: true
-    });
-  }      
-  </script>
 </body>
 </html>
